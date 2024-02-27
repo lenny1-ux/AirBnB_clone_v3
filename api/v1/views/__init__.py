@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-views
+views import flask views
 """
 
 from flask import Blueprint
@@ -14,4 +14,13 @@ from api.v1.views.cities import *
 from api.v1.views.places import *
 from api.v1.views.places_reviews import *
 from api.v1.views.users import *
-from api.v1.views.places_amenities import 
+from api.v1.views.places_amenities import *
+
+"""import storage engine and classes"""
+from models import storage
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.user import User
+from models.place import Place
+from models.review import Review
